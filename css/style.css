@@ -1,3 +1,32 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(90, 49, 128);
+}
 .hidden {
     display: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#start {
+    position: relative;
+    top:50vh;
+    left:0;
+    transform:translate(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.block h2, .block h3 {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+.block :nth-child(2) {
+    letter-spacing: 10px;
 }

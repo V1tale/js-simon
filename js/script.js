@@ -1,11 +1,11 @@
 // CREO 5 NUMERI CASUALI TRAMITE FUNZIONE
 // INITIALIZING
-let numbersArray = [];
-for(i=0;i < 5; i++) {
-    let numbers = randomNumber(1, 100);
-    numbersArray.push(numbers);
-    
-}
+const start = addEventListener("click", function () {
+    let numbersArray = [];
+    for(i=0;i < 5; i++) {
+        let numbers = randomNumber(1, 100);
+        numbersArray.push(numbers);        
+    }
 console.log(numbersArray);
 // FACCIO APPARIRE I NUMERI IN PAGINA
 const title = document.getElementById("randomNumbers");
@@ -32,11 +32,10 @@ setTimeout( function () {
 
 }, 3000);
 
-
 // FUNCTIONS
 
 function randomNumber (min, max) {
-return (Math.floor(Math.random() * (max - min) + min));
+    return (Math.floor(Math.random() * (max - min) + min));
 }
 
 function cleaner(string) {
@@ -61,3 +60,4 @@ function CompareArrays(arrayOne, arrayTwo) {
     }
     return result;
 }
+})
